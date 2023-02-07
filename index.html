@@ -3,16 +3,6 @@
   <head>
     <title>ChatGPT API Example</title>
     <style>
-      /* Background pattern */
-      body {
-        background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/49/Pra%C3%A7a_da_matriz.jpg");
-        background-size: cover;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
 
       /* Form styling */
       div {
@@ -56,7 +46,11 @@
         text-align: center;
       }
     </style>
+	
+	
+  </head>
 
+	
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	
@@ -78,7 +72,6 @@ $(document).ready(function() {
   });
   
 
-  </head>
   <body>
     <div>
       <h1>Oi gente! Aqui é a Iza</h1>
@@ -88,6 +81,7 @@ $(document).ready(function() {
 	</div>
 	<button id="submit-button">Submit</button>
 	<div id="response"></div>
+  </body>
 
   $("#submit-button").on("click", function() {
     submitQuestion();
