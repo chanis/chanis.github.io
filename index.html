@@ -69,12 +69,12 @@ $(document).ready(function() {
 
 	//window.location.href = "https://izaadorabolo.com";
 
-  const API_KEY = "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";
+  const API_KEY = "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";
   
   $("#question").on("keyup", function(event) {
     if (event.keyCode === 13) {
       submitQuestion();
-      alert("É uma boa pergunta")
+      alert("你的问题")
       console.log("printando")
     }
   });
@@ -109,7 +109,7 @@ $(document).ready(function() {
       },
       error: function(jqXHR, textStatus, errorThrown) {
         console.error(textStatus, errorThrown);
-        $("#response").text("Ocorreu um erro. Tente novamente mais tarde.");
+        $("#response").text("出错啦");
       }
     });
   }
