@@ -46,14 +46,22 @@
         text-align: center;
       }
     </style>
-	
-	
-  </head>
 
-	
+  </head>
+  <body>
+    <div>
+      <h1>Oi gente! Aqui é a Iza</h1>
+	<div>
+	  <label for="question">PERGUNTA QUALQUER COISA:</label>
+	  <input type="text" id="question" name="question"></input>
+	</div>
+	<button id="submit-button">Submit</button>
+	<div id="response"></div>
+    </div>
+  </body>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	
+
 
 <script>
 
@@ -70,19 +78,7 @@ $(document).ready(function() {
       console.log("printando")
     }
   });
-  
 
-  <body>
-    <div>
-      <h1>Oi gente! Aqui é a Iza</h1>
-	<div>
-	  <label for="question">PERGUNTA QUALQUER COISA:</label>
-	  <input type="text" id="question" name="question"></input>
-	</div>
-	<button id="submit-button">Submit</button>
-	<div id="response"></div>
-    </div>
-  </body>
 
   $("#submit-button").on("click", function() {
     submitQuestion();
